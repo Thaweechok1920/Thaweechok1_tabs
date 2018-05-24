@@ -1,0 +1,41 @@
+<!--
+  Generated template for the ExercisePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>การออกกำลังกาย</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        
+        <div><H3>ข้อมูลการออกกำลังกาย</H3></div> 
+              <ion-item>
+                <ion-label floating>กิจกรรมที่ทำ</ion-label>
+                <ion-input [(ngModel)]="activities"  type="text" value=""></ion-input>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label floating>รายละเอียด</ion-label>
+                  <ion-input [(ngModel)]="height" type="text " value=""></ion-input>
+                </ion-item>
+                  <br>
+                  <ion-item>
+                      <ion-label floating>เวลาที่อออกำลังกาย : ชั่วโมง</ion-label>
+                      <ion-input [(ngModel)]="time" type="text" value=""></ion-input>
+                    </ion-item>
+            
+            </ion-list>
+            
+            <div padding>
+                <dir><button ion-button full >บันทึก</button></dir>
+            </div>
+
+</ion-content>

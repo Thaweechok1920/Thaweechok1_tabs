@@ -1,0 +1,43 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>BMI</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <html>
+      <ion-list>
+        
+    <div><H4>การหาค่าเฉลื่ย BMI</H4></div> 
+          <ion-item>
+            <ion-label floating>น้ำหนัก</ion-label>
+            <ion-input [(ngModel)]="weight"  type="text" value=""></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label floating>ส่วนสูง</ion-label>
+              <ion-input [(ngModel)]="height" type="text" value=""></ion-input>
+            </ion-item>
+              <br>
+            <ion-item>
+                <ion-label>เพศ</ion-label>
+                <ion-select [(ngModel)]="gender">
+                  <ion-option value="m">ชาย</ion-option>
+                  <ion-option value="f">หญิง</ion-option>
+              
+                </ion-select>
+              </ion-item>
+        
+        </ion-list>
+        
+        <div padding>
+            <dir><button ion-button full >คำนวน</button></dir>
+        </div>
+      
+</html>
+</ion-content>

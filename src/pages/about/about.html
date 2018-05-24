@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color="alcon-green">
+      <ion-title>
+        คำนวณ BMR
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+      <div><H3>BMR</H3></div> 
+  
+    <ion-item>
+      <ion-input type="text" placeholder="กรุณากรอกน้ำหนัก(kg)" [(ngModel)]="weight"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input type="text" placeholder="กรุณากรอกส่วนสูง(cm)" [(ngModel)]="height"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-input type="text" placeholder="กรุณากรอกอายุ(ปี)" [(ngModel)]="age"></ion-input>
+    </ion-item>
+        
+        <br>
+
+     
+  
+  
+    <div padding>
+      <button ion-button block color="secondary" (click)="calBmr1()">ชาย</button>
+    </div>
+
+    <div padding>
+        <button ion-button block color="secondary" (click)="calBmr2()">หญิง</button>
+      </div>
+  
+
+   
+    <ion-badge >{{bmr |number:'1.2-2'}}</ion-badge>
+  </ion-content>
